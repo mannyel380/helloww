@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise</title>
+    <link rel="stylesheet" href="happy.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="stars" id="stars"></div>
+
+        <!-- Name Entry Screen -->
+        <div class="name-screen" id="nameScreen">
+            <h1>💝 Valentine's Surprise 💝</h1>
+            <div class="name-input-container">
+                <input type="text" class="name-input" id="nameInput" placeholder="Enter your name..." maxlength="30">
+                <button class="submit-btn" id="submitBtn">Continue</button>
+            </div>
+        </div>
+
+        <!-- Envelope Screen -->
+        <div class="envelope-screen" id="envelopeScreen">
+            <div class="envelope-wrapper">
+                <div class="envelope-container" id="envelopeContainer">
+                    <div class="envelope-flap-left"></div>
+                    <div class="envelope-flap-right"></div>
+                    <div class="envelope-body"></div>
+                    
+                    <div class="ribbon">
+                        <div class="ribbon-horizontal"></div>
+                        <div class="ribbon-vertical"></div>
+                    </div>
+                    
+                    <div class="wax-seal"></div>
+                    
+                    <div class="letter" id="letter">
+                        <div class="letter-hearts">
+                            <div class="heart-decoration"><span></span></div>
+                            <div class="heart-decoration"><span></span></div>
+                            <div class="heart-decoration"><span></span></div>
+                        </div>
+                        
+                        <div class="letter-header">Hello!</div>
+                        <div class="letter-title">Happy Valentine's Day!</div>
+                        <div class="letter-message" id="letterMessage">
+                          Like a hidden star, your light touches lives softly, leaving love unseen but true.
+                        </div>
+                        <div class="letter-recipient" id="recipientName"></div>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button class="open-surprise-btn" id="surpriseBtn">CLICK ME</button>
+                    </div>
+                    
+                    <div class="envelope-flap"></div>
+                </div>
+                <div class="click-instruction" id="clickHint">(click on the letter to read it)</div>
+            </div>
+        </div>
+
+        <!-- Flower Animation Screen -->
+        <div class="flower-screen" id="flowerScreen">
+            <div class="flower-stars" id="flowerStars"></div>
+            <canvas id="flowerCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="happy.js"></script>
+</body>
+</html>
